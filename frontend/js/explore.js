@@ -470,8 +470,8 @@ function createExperienceCard(experience) {
                         alt="${title}"
                         loading="lazy"
                         onerror="
-                            this.onerror=null;
-                            this.src='images/placeholder.jpg';
+                            this.style.display='none';
+                            this.parentElement.innerHTML='<div style=\"width:100%; height:250px; background:#f0f0f0; display:flex; align-items:center; justify-content:center;\"><i class=\"fa-solid fa-image\" style=\"font-size:3rem; color:#999;\"></i></div>';
                         "
                     >
 
