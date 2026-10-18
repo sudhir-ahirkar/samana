@@ -2,7 +2,7 @@
 // BACKEND URL CONFIGURATION
 // =========================================================
 
-const getBackendUrl = () => {
+const getHostBackendUrl = () => {
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         return 'http://localhost:8080';
     }
@@ -13,7 +13,7 @@ const getBackendUrl = () => {
     return 'https://samana-backend-82716904797.asia-south1.run.app';
 };
 
-const HOST_API_URL = getBackendUrl() + "/api";
+const HOST_API_URL = getHostBackendUrl() + "/api";
 
 
 // =========================================================
